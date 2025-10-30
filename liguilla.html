@@ -1,0 +1,37 @@
+
+<!doctype html><html lang="es"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Liguilla — SFV</title><link rel="stylesheet" href="css/styles.css"/></head><body>
+<header class="header"><div class="container nav">
+<img src="assets/logo.png" alt="SFV logo"/><div class="brand">Superliga de Fútbol Valores</div>
+<a href="index.html">Inicio</a><a href="torneo.html">Torneo</a><a href="liguilla.html" style="text-decoration:underline">Liguilla</a><a href="equipos.html">Equipos</a><a href="galeria.html">Galería</a><a href="reglamento.html">Reglamento</a><a href="contacto.html">Contacto</a>
+</div></header>
+<div class="container">
+  <h2>Liguilla — Cuartos de final</h2>
+  <p class="notice">Edita <code>data/liguilla.json</code> para actualizar marcadores y clasificados.</p>
+  <div id="bracket" class="bracket"></div>
+</div>
+<div class="footer">© 2025 Superliga de Fútbol Valores · Hecho con 💙💜 · Categoría: Libre</div>
+<script>
+async function loadJSON(path){
+  const url = path + (path.includes('?')?'&':'?') + 'v=' + Date.now();
+  const res = await fetch(url, {cache:'no-store'});
+  if(!res.ok) throw new Error('No se pudo cargar '+path+' ('+res.status+')');
+  return res.json();
+}
+(async()=>{
+  const br=document.getElementById('bracket');
+  const data=await loadJSON('data/liguilla.json');
+  function score(m){ return (m.g1==null||m.g2==null)?'vs':`${m.g1} - ${m.g2}` }
+  let html='';
+  html += '<div class="round"><h3>Cuartos</h3>';
+  data.cuartos.forEach((m)=>{ html += `<div class="match"><div class="vs"><span>${m.t1}</span><b>${score(m)}</b><span>${m.t2}</span></div><div class="small">${m.date||''} ${m.time||''} · ${m.venue||''}</div></div>`; });
+  html += '</div>';
+  html += '<div class="round"><h3>Semifinales</h3>';
+  (data.semifinal||[]).forEach((m)=>{ html += `<div class="match"><div class="vs"><span>${m.t1||'TBD'}</span><b>${score(m)}</b><span>${m.t2||'TBD'}</span></div><div class="small">${m.date||''} ${m.time||''} · ${m.venue||''}</div></div>`; });
+  html += '</div>';
+  html += '<div class="round"><h3>Final</h3>';
+  (data.final||[]).forEach((m)=>{ html += `<div class="match"><div class="vs"><span>${m.t1||'TBD'}</span><b>${score(m)}</b><span>${m.t2||'TBD'}</span></div><div class="small">${m.date||''} ${m.time||''} · ${m.venue||''}</div></div>`; });
+  html += '</div>';
+  br.innerHTML = html;
+})();
+</script></body></html>

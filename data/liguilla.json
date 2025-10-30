@@ -1,0 +1,62 @@
+{
+  "cuartos": [
+    {
+      "t1": "SFV Equipo 1",
+      "t2": "SFV Equipo 8",
+      "g1": null,
+      "g2": null,
+      "date": "2025-11-02",
+      "time": "10:00",
+      "venue": "Campo 1"
+    },
+    {
+      "t1": "SFV Equipo 4",
+      "t2": "SFV Equipo 5",
+      "g1": null,
+      "g2": null,
+      "date": "2025-11-02",
+      "time": "12:00",
+      "venue": "Campo 1"
+    },
+    {
+      "t1": "SFV Equipo 2",
+      "t2": "SFV Equipo 7",
+      "g1": null,
+      "g2": null,
+      "date": "2025-11-02",
+      "time": "14:00",
+      "venue": "Campo 2"
+    },
+    {
+      "t1": "SFV Equipo 3",
+      "t2": "SFV Equipo 6",
+      "g1": null,
+      "g2": null,
+      "date": "2025-11-02",
+      "time": "16:00",
+      "venue": "Campo 2"
+    }
+  ],
+  "semifinal": [
+    {
+      "t1": "Ganador QF1",
+      "t2": "Ganador QF2",
+      "g1": null,
+      "g2": null
+    },
+    {
+      "t1": "Ganador QF3",
+      "t2": "Ganador QF4",
+      "g1": null,
+      "g2": null
+    }
+  ],
+  "final": [
+    {
+      "t1": "Ganador SF1",
+      "t2": "Ganador SF2",
+      "g1": null,
+      "g2": null
+    }
+  ]
+}

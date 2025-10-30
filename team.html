@@ -1,0 +1,40 @@
+
+<!doctype html><html lang="es"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Equipo — SFV</title><link rel="stylesheet" href="css/styles.css"/></head><body>
+<header class="header"><div class="container nav">
+<img src="assets/logo.png" alt="SFV logo"/><div class="brand">Superliga de Fútbol Valores</div>
+<a href="index.html">Inicio</a><a href="torneo.html">Torneo</a><a href="liguilla.html">Liguilla</a><a href="equipos.html" style="text-decoration:underline">Equipos</a><a href="galeria.html">Galería</a><a href="reglamento.html">Reglamento</a><a href="contacto.html">Contacto</a>
+</div></header>
+<div class="container" id="team-container"><p class="notice">Cargando equipo…</p></div>
+<div class="footer">© 2025 Superliga de Fútbol Valores · Hecho con 💙💜 · Categoría: Libre</div>
+<script>
+async function loadJSON(path){
+  const url = path + (path.includes('?')?'&':'?') + 'v=' + Date.now();
+  const res = await fetch(url, {cache:'no-store'});
+  if(!res.ok) throw new Error('No se pudo cargar '+path+' ('+res.status+')');
+  return res.json();
+}
+(async()=>{
+  const slug=new URL(location.href).searchParams.get('team');
+  const teams=await loadJSON('data/equipos.json');
+  const team=teams.find(t=>t.slug===slug)||teams[0];
+  const jugadores=await loadJSON('data/jugadores.json');
+  const roster=jugadores[team.slug]||[];
+  const cont=document.getElementById('team-container');
+  const head=`<div style="display:flex;gap:16px;align-items:center">
+    <img src="${team.logo}" style="width:80px;height:80px;border-radius:12px;background:white;padding:8px"/>
+    <div><h2 style="margin:0">${team.name}</h2><div class="tag">${team.community||''}</div></div>
+  </div>`;
+  let rosterHtml='<div class="card"><h3>Plantel</h3>';
+  if(roster.length===0){ rosterHtml+='<p class="notice">Aún no hay jugadores cargados.</p>'; }
+  else{
+    rosterHtml+='<div class="roster">';
+    roster.forEach(p=>{
+      rosterHtml+=`<div class="player"><img src="${p.photo}" alt="${p.name}"/><div style="margin-top:6px"><b>#${p.number||''} ${p.name}</b></div><div class="small">${p.position||''}</div></div>`;
+    });
+    rosterHtml+='</div>';
+  }
+  rosterHtml+='</div>';
+  cont.innerHTML = head + rosterHtml;
+})();
+</script></body></html>

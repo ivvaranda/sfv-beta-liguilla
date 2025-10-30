@@ -1,0 +1,258 @@
+{
+  "equipo-1": [
+    {
+      "name": "Jugador 1",
+      "number": 1,
+      "position": "Por definir",
+      "photo": "assets/jugadores/equipo-1/jugador-1.jpg"
+    },
+    {
+      "name": "Jugador 2",
+      "number": 2,
+      "position": "Por definir",
+      "photo": "assets/jugadores/equipo-1/jugador-2.jpg"
+    },
+    {
+      "name": "Jugador 3",
+      "number": 3,
+      "position": "Por definir",
+      "photo": "assets/jugadores/equipo-1/jugador-3.jpg"
+    },
+    {
+      "name": "Jugador 4",
+      "number": 4,
+      "position": "Por definir",
+      "photo": "assets/jugadores/equipo-1/jugador-4.jpg"
+    },
+    {
+      "name": "Jugador 5",
+      "number": 5,
+      "position": "Por definir",
+      "photo": "assets/jugadores/equipo-1/jugador-5.jpg"
+    }
+  ],
+  "equipo-2": [
+    {
+      "name": "Jugador 1",
+      "number": 1,
+      "position": "Por definir",
+      "photo": "assets/jugadores/equipo-2/jugador-1.jpg"
+    },
+    {
+      "name": "Jugador 2",
+      "number": 2,
+      "position": "Por definir",
+      "photo": "assets/jugadores/equipo-2/jugador-2.jpg"
+    },
+    {
+      "name": "Jugador 3",
+      "number": 3,
+      "position": "Por definir",
+      "photo": "assets/jugadores/equipo-2/jugador-3.jpg"
+    },
+    {
+      "name": "Jugador 4",
+      "number": 4,
+      "position": "Por definir",
+      "photo": "assets/jugadores/equipo-2/jugador-4.jpg"
+    },
+    {
+      "name": "Jugador 5",
+      "number": 5,
+      "position": "Por definir",
+      "photo": "assets/jugadores/equipo-2/jugador-5.jpg"
+    }
+  ],
+  "equipo-3": [
+    {
+      "name": "Jugador 1",
+      "number": 1,
+      "position": "Por definir",
+      "photo": "assets/jugadores/equipo-3/jugador-1.jpg"
+    },
+    {
+      "name": "Jugador 2",
+      "number": 2,
+      "position": "Por definir",
+      "photo": "assets/jugadores/equipo-3/jugador-2.jpg"
+    },
+    {
+      "name": "Jugador 3",
+      "number": 3,
+      "position": "Por definir",
+      "photo": "assets/jugadores/equipo-3/jugador-3.jpg"
+    },
+    {
+      "name": "Jugador 4",
+      "number": 4,
+      "position": "Por definir",
+      "photo": "assets/jugadores/equipo-3/jugador-4.jpg"
+    },
+    {
+      "name": "Jugador 5",
+      "number": 5,
+      "position": "Por definir",
+      "photo": "assets/jugadores/equipo-3/jugador-5.jpg"
+    }
+  ],
+  "equipo-4": [
+    {
+      "name": "Jugador 1",
+      "number": 1,
+      "position": "Por definir",
+      "photo": "assets/jugadores/equipo-4/jugador-1.jpg"
+    },
+    {
+      "name": "Jugador 2",
+      "number": 2,
+      "position": "Por definir",
+      "photo": "assets/jugadores/equipo-4/jugador-2.jpg"
+    },
+    {
+      "name": "Jugador 3",
+      "number": 3,
+      "position": "Por definir",
+      "photo": "assets/jugadores/equipo-4/jugador-3.jpg"
+    },
+    {
+      "name": "Jugador 4",
+      "number": 4,
+      "position": "Por definir",
+      "photo": "assets/jugadores/equipo-4/jugador-4.jpg"
+    },
+    {
+      "name": "Jugador 5",
+      "number": 5,
+      "position": "Por definir",
+      "photo": "assets/jugadores/equipo-4/jugador-5.jpg"
+    }
+  ],
+  "equipo-5": [
+    {
+      "name": "Jugador 1",
+      "number": 1,
+      "position": "Por definir",
+      "photo": "assets/jugadores/equipo-5/jugador-1.jpg"
+    },
+    {
+      "name": "Jugador 2",
+      "number": 2,
+      "position": "Por definir",
+      "photo": "assets/jugadores/equipo-5/jugador-2.jpg"
+    },
+    {
+      "name": "Jugador 3",
+      "number": 3,
+      "position": "Por definir",
+      "photo": "assets/jugadores/equipo-5/jugador-3.jpg"
+    },
+    {
+      "name": "Jugador 4",
+      "number": 4,
+      "position": "Por definir",
+      "photo": "assets/jugadores/equipo-5/jugador-4.jpg"
+    },
+    {
+      "name": "Jugador 5",
+      "number": 5,
+      "position": "Por definir",
+      "photo": "assets/jugadores/equipo-5/jugador-5.jpg"
+    }
+  ],
+  "equipo-6": [
+    {
+      "name": "Jugador 1",
+      "number": 1,
+      "position": "Por definir",
+      "photo": "assets/jugadores/equipo-6/jugador-1.jpg"
+    },
+    {
+      "name": "Jugador 2",
+      "number": 2,
+      "position": "Por definir",
+      "photo": "assets/jugadores/equipo-6/jugador-2.jpg"
+    },
+    {
+      "name": "Jugador 3",
+      "number": 3,
+      "position": "Por definir",
+      "photo": "assets/jugadores/equipo-6/jugador-3.jpg"
+    },
+    {
+      "name": "Jugador 4",
+      "number": 4,
+      "position": "Por definir",
+      "photo": "assets/jugadores/equipo-6/jugador-4.jpg"
+    },
+    {
+      "name": "Jugador 5",
+      "number": 5,
+      "position": "Por definir",
+      "photo": "assets/jugadores/equipo-6/jugador-5.jpg"
+    }
+  ],
+  "equipo-7": [
+    {
+      "name": "Jugador 1",
+      "number": 1,
+      "position": "Por definir",
+      "photo": "assets/jugadores/equipo-7/jugador-1.jpg"
+    },
+    {
+      "name": "Jugador 2",
+      "number": 2,
+      "position": "Por definir",
+      "photo": "assets/jugadores/equipo-7/jugador-2.jpg"
+    },
+    {
+      "name": "Jugador 3",
+      "number": 3,
+      "position": "Por definir",
+      "photo": "assets/jugadores/equipo-7/jugador-3.jpg"
+    },
+    {
+      "name": "Jugador 4",
+      "number": 4,
+      "position": "Por definir",
+      "photo": "assets/jugadores/equipo-7/jugador-4.jpg"
+    },
+    {
+      "name": "Jugador 5",
+      "number": 5,
+      "position": "Por definir",
+      "photo": "assets/jugadores/equipo-7/jugador-5.jpg"
+    }
+  ],
+  "equipo-8": [
+    {
+      "name": "Jugador 1",
+      "number": 1,
+      "position": "Por definir",
+      "photo": "assets/jugadores/equipo-8/jugador-1.jpg"
+    },
+    {
+      "name": "Jugador 2",
+      "number": 2,
+      "position": "Por definir",
+      "photo": "assets/jugadores/equipo-8/jugador-2.jpg"
+    },
+    {
+      "name": "Jugador 3",
+      "number": 3,
+      "position": "Por definir",
+      "photo": "assets/jugadores/equipo-8/jugador-3.jpg"
+    },
+    {
+      "name": "Jugador 4",
+      "number": 4,
+      "position": "Por definir",
+      "photo": "assets/jugadores/equipo-8/jugador-4.jpg"
+    },
+    {
+      "name": "Jugador 5",
+      "number": 5,
+      "position": "Por definir",
+      "photo": "assets/jugadores/equipo-8/jugador-5.jpg"
+    }
+  ]
+}

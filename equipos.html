@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="es"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Equipos — SFV</title><link rel="stylesheet" href="css/styles.css"/></head>
+<body>
+<header class="header">
+  <div class="container nav">
+    <img src="assets/logo.png" alt="SFV logo"/>
+    <div class="brand">Superliga de Fútbol Valores</div>
+    <a href="index.html" >Inicio</a>
+    <a href="torneo.html" >Torneo</a>
+    <a href="liguilla.html" >Liguilla</a>
+    <a href="equipos.html" style="text-decoration:underline">Equipos</a>
+    <a href="galeria.html" >Galería</a>
+    <a href="reglamento.html" >Reglamento</a>
+    <a href="contacto.html" >Contacto</a>
+  </div>
+</header><div class="container">
+<h2>Equipos participantes (8)</h2>
+<p class="notice">Sube tus escudos a <code>assets/logos/</code> y fotos del plantel a <code>assets/jugadores/&lt;slug&gt;/</code>.</p>
+<div id="msg" class="notice" style="margin-bottom:10px;"></div>
+<div class="grid" id="equipos-grid"></div>
+<script>
+(async()=>{
+  const msg=document.getElementById('msg');
+  try{
+    const teams=await loadJSON('data/equipos.json');
+    const grid=document.getElementById('equipos-grid');
+    grid.innerHTML = teams.map(t=>`
+      <a class="card" href="team.html?team=${t.slug}" style="display:block;text-decoration:none;color:inherit">
+        <div style="display:flex;gap:14px;align-items:center">
+          <img src="${t.logo}" alt="${t.name}" style="width:60px;height:60px;border-radius:8px;background:white;padding:6px"/>
+          <div><h3 style="margin:0">${t.name}</h3><div class="tag">${t.community||''}</div></div>
+        </div>
+      </a>`).join('');
+  }catch(e){ msg.textContent='Error cargando equipos: '+e.message; }
+})();
+</script>
+</div><div class="footer">© 2025 Superliga de Fútbol Valores · Hecho con 💙💜 · Categoría: Libre</div><script src="js/app.js?v=4"></script></body></html>
