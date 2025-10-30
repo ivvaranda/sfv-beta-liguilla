@@ -1,50 +1,50 @@
 [
   {
-    "name": "SFV Equipo 1",
+    "name": "LAZARO CARDENAS",
     "slug": "equipo-1",
-    "community": "Comunidad 1",
+    "community": "lazaro",
     "logo": "assets/logos/equipo-1.png"
   },
   {
-    "name": "SFV Equipo 2",
-    "slug": "equipo-2",
-    "community": "Comunidad 2",
+    "name": "BAD BOYS",
+    "slug": "badboys",
+    "community": "PUENTE IXTLA",
     "logo": "assets/logos/equipo-2.png"
   },
   {
-    "name": "SFV Equipo 3",
-    "slug": "equipo-3",
-    "community": "Comunidad 3",
+    "name": "REAL PALMAS",
+    "slug": "palmas",
+    "community": "ZACATEPEC",
     "logo": "assets/logos/equipo-3.png"
   },
   {
-    "name": "SFV Equipo 4",
-    "slug": "equipo-4",
-    "community": "Comunidad 4",
+    "name": "MILAN GALEANA",
+    "slug": "milan",
+    "community": "ZACATEPEC",
     "logo": "assets/logos/equipo-4.png"
   },
   {
-    "name": "SFV Equipo 5",
-    "slug": "equipo-5",
-    "community": "Comunidad 5",
+    "name": "UNION",
+    "slug": "union",
+    "community": "ZACATEPEC",
     "logo": "assets/logos/equipo-5.png"
   },
   {
-    "name": "SFV Equipo 6",
-    "slug": "equipo-6",
-    "community": "Comunidad 6",
+    "name": "CACHORROS CDT",
+    "slug": "cahorros",
+    "community": "ZACATEPEC",
     "logo": "assets/logos/equipo-6.png"
   },
   {
-    "name": "SFV Equipo 7",
-    "slug": "equipo-7",
-    "community": "Comunidad 7",
+    "name": "DEPORTIVO FREEMSUR ",
+    "slug": "freemsur",
+    "community": "JOJUTLA",
     "logo": "assets/logos/equipo-7.png"
   },
   {
-    "name": "SFV Equipo 8",
-    "slug": "equipo-8",
-    "community": "Comunidad 8",
+    "name": "DEPORTIO YONKA",
+    "slug": "yonka",
+    "community": "ZACATEPEC",
     "logo": "assets/logos/equipo-8.png"
   }
 ]
